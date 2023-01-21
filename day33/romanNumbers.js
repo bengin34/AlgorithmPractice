@@ -31,7 +31,7 @@ function solution(number){
     for ( i in romanNum ) {
       while ( number >= romanNum[i] ) {
         roman += i;
-        number -= lookup[i];
+        number -= romanNum[i];
       }
     }
     return roman;
