@@ -33,7 +33,7 @@ let data = [
 
 function createTable(data) {
   let table = document.createElement("table");
-  table.style.borderCollapse = "collapse";
+  table.style.borderCollapse = "seperate";
   table.style.border = "1px solid white";
   let tbody = document.createElement("tbody");
   let theader = document.createElement("theader");
