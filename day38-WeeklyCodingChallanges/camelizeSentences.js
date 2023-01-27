@@ -18,34 +18,8 @@
 
 // Output : javaScriptCodingChallenge
 
-//todo What I did
-
-
-let a = "JavaScript coding ChAlLenge";
-
-
-// camelize(a);
-
-function convert (a){
-       let str = "";
-       let b = a.toLowerCase()
-    for ( let i = 0; i < a.length; i++)
-    {
-        
-        if (b[i] == ' '){
-            str += b[i+1].toUpperCase();
-            i++;
-        }
-        else{
-            str += b[i];
-        }
-    }
-    return str;
-}
-
-console.log(convert(a));
-
 //!! here is the solution
+
 let string = "JavaScript coding ChAlLenge";
 
 function convertToCamelCase(string){
@@ -64,3 +38,32 @@ console.log(convertToCamelCase(string));
 
 
 // \s = whitespace
+
+
+
+
+
+// What I did at first
+
+
+let a = "JavaScript coding ChAlLenge";
+
+
+function convert (a){
+       let str = "";
+       let b = a.toLowerCase()
+    for ( let i = 0; i < a.length; i++)
+    {
+        
+        if (b[i] == ' '){
+            str += b[i+1].toUpperCase();
+            i++;
+        }
+        else{
+            str += b[i];
+        }
+    }
+    return str;
+}
+
+//but it didn't work for all inputs especially which includes non-letters
