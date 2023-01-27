@@ -3,14 +3,14 @@
 // Expected Outcome
 // ​
 
-// St Nr	First Name	Last Name	Location	Path
-// C1234	John	    Doe	        London	    Full-Stack
-// C2345	Jane    	Doe         London	    Data-Science
-// C2346	Mary	    Ann       	Paris       AWS-Devops
-// C2347	Adam	    Smith	    Texas   	AWS-Devops
-// C2444	Michael	    Great       Arizona	    Full-Stack
-// C2555	William	    Cash	    Manchester	Data-Science
-// C2455	Patrick	    Jane	    Madrid	    Full-Stack
+// St Nr	First Name	Last Name	    Location	      Path
+// C1234	John	        Doe	          London	    Full-Stack
+// C2345	Jane    	    Doe           London	    Data-Science
+// C2346	Mary	        Ann         	Paris       AWS-Devops
+// C2347	Adam	        Smith	        Texas   	  AWS-Devops
+// C2444	Michael	      Great         Arizona	    Full-Stack
+// C2555	William	      Cash	        Manchester	Data-Science
+// C2455	Patrick	      Jane	        Madrid	    Full-Stack
 // Learning Outcomes
 // At the end of the this coding challenge, students will be able to;
 
@@ -21,7 +21,7 @@
 // Problem Statement
 // Sample Input
 let data = [
-  "St Nr-First Name,Last Name,Location	Path",
+  "St Nr-  First Name,Last Name,Location	Path",
   "C1234 - John Doe, London, Full-Stack",
   "C2345 - Jane Doe, London, Data-Science",
   "C2346 - Mary Ann, Paris, AWS-Devops",
