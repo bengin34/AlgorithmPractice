@@ -1,24 +1,25 @@
-// Write a function that takes a positive integer n, sums all the cubed values from 1 to n (inclusive), and returns that sum.
+// Introduction
+// Take a list of n numbers a1, a2, a3, ..., aN to start with.
 
-// Assume that the input n will always be a positive integer.
+// Arithmetic mean (or average) is the sum of these numbers divided by n.
 
-// Examples: (Input --> output)
+// Geometric mean (or average) is the product of these numbers taken to the nth root.
 
-// 2 --> 9 (sum of the cubes of 1 and 2 is 1 + 8)
-// 3 --> 36 (sum of the cubes of 1, 2, and 3 is 1 + 8 + 27)
+// Example
+// List of numbers: 1, 3, 9, 27, 81
 
-
-
-// let  a = 3
-
-
-function sumOfCubes(number){
-    let sum = 0;
-    for(let i = 1; i <= number ;i++)
-    sum += i**3
+// n = 5
+// Arithmetic mean = (1 + 3 + 9 + 27 + 81) / 5 = 121 / 5 = 24.2
+// Geometric mean = (1 * 3 * 9 * 27 * 81) ^ (1/5) = 59049 ^ (1/5) = 9
+// Task
+// You will be given a list of numbers and their arithmetic mean. However, the list is missing one number. Using this information, you must figure out and return the geometric mean of the FULL LIST, including the number that's missing.
 
 
-    return sum
+function geo_mean(nums, arith_mean) {
+let n = nums.length;
+let sum = nums.reduce((acc, cur) => acc + cur, 0)
+let missingElement = arith_mean * (n+1) - sum ;
+let fullList = nums.concat(missingElement);
+    return Math.pow(fullList.reduce((acc,cur) => acc * cur, 1), 1 / (n+1));
 }
 
-console.log(sumOfCubes(3));
