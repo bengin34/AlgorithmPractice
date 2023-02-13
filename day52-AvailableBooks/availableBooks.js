@@ -1,13 +1,13 @@
-// //An inventory application for a bookstore
-// //each book have
+//An inventory application for a bookstore
+//each book have
 // 1.title
 // 2.author
 // 3.ısbn
 // 4.numCopies
 
-// // output: out of stock if 0
-// // low stock < 10
-// // otherwise in stock
+// output: out of stock if 0
+// low stock < 10
+// otherwise in stock
 
 
 
