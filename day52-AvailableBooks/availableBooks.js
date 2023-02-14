@@ -60,7 +60,7 @@ get availability() {
 }
 
 getAvailability() {
-    if(this.numCopies=== 0) {
+    if(this.numCopies === 0) {
      return "Out Of Stock"
     } else if(this.numCopies < 10){
       return "Low Stock"
